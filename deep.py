@@ -8,10 +8,11 @@ from sklearn.impute import SimpleImputer
 from joblib import dump
 
 # Load the dataset
-data = pd.read_csv("GW_data.csv")
+data1 = pd.read_csv("GW_data.csv")
+sm_data =pd.read_csv("sm_TN.csv")
 
 # Convert class labels to integers
-data["Class"] = data["Class"].map({"S": 1, "A": 0, "C": 2, "O": 3})
+merged_data["Class"] = merged_data["Class"].map({"S": 1, "A": 0, "C": 2, "O": 3})
 
 # Split the dataset into train, validation, and test sets
 train, valid, test = np.split(data.sample(frac=1), [int(0.6 * len(data)), int(0.8 * len(data))])

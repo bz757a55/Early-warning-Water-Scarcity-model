@@ -1,0 +1,24 @@
+body{
+  font-family: sans-serif;
+  margin: 20px;
+}
+h1{
+  text-align: center;
+}
+.map-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#map{
+  width: 600px;
+  height: 400px;
+}
+#data-info{
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #000000;
+}
+#loading {
+  text-align: center;
+}
